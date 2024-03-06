@@ -1,0 +1,192 @@
+@font-face {
+  font-family: "Norse-Bold";
+  src: url("./font/Norse-Bold.otf") format("truetype");
+  /* Add more font formats here if needed */
+}
+
+* {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Use the font in your CSS */
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #f0f0f0;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.container-img {
+  flex: 1 1 auto;
+  background-image: url("./img/roan-lavery-lvy_VvdLmnA-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.container-odin {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 0.4);
+  color: aliceblue;
+  gap: 1rem;
+  padding: 1rem;
+  margin-top: 100px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  height: 100%;
+  max-height: 100px;
+  overflow: auto;
+}
+
+.container-odin img {
+  max-height: 100%;
+  height: auto;
+}
+
+.container-odin h1 {
+  font-size: 4rem;
+  font-weight: bolder;
+  font-family: "Norse-Bold";
+}
+
+.container-form {
+  flex: 3 1 400px;
+}
+
+.container-form-title {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.container-form-title h2 {
+  font-size: 2rem;
+  font-weight: bolder;
+  font-family: "Norse-Bold";
+}
+
+.container-form-title p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.container-form form {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.container-form form div {
+  display: flex;
+  flex-direction: column;
+  gap: 1 rem;
+  flex: 2 1 40%;
+}
+
+.container-form form div label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.container-form form div input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #a1a1a1;
+  font-size: 1rem;
+  outline: none;
+}
+
+.container-form form div input:focus {
+  border-color: #2e2e2e;
+  box-shadow: 0 0 10px 0 rgb(21, 51, 2);
+}
+
+.container-form form div input:required:invalid {
+  border-color: red;
+}
+
+.container-form form div input:valid {
+  border-color: green;
+}
+
+.container-form form div input.error {
+  border-color: red;
+}
+
+.container-btn {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+
+.container-btn button {
+  padding: 0.8rem 4rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #2e2e2e;
+  color: aliceblue;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 1rem;
+}
+
+.container-btn button:hover {
+  background-color: #4e4e4e;
+}
+
+.container-btn button:active {
+  background-color: #1e1e1e;
+}
+
+.container-btn button:disabled {
+  background-color: #a1a1a1;
+  color: #2e2e2e;
+  cursor: not-allowed;
+}
+
+.container-btn a {
+  text-decoration: none;
+  color: #2e2e2e;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-left: 1rem;
+  transition: 0.3s;
+}
+
+.container-btn a:hover {
+  color: #4e4e4e;
+}
+
+.container-btn a:active {
+  color: #1e1e1e;
+}
+
+
+.error-message, small {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  visibility: hidden;
+}
+
+.active {
+  visibility: visible;
+}
